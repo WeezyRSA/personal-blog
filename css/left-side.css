@@ -1,3 +1,6 @@
 .left-sidebar ul{
   list-style-type: none;
 }
+.left-sidebar ul li{
+  margin: 0.5em;
+}

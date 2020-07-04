@@ -76,13 +76,19 @@ nav a{
 }
 .left-sidebar{
   grid-area: left;
+  font-family: 'Courier New', Courier;
+  padding: 1em;
 }
 article{
   grid-area: article;
 }
 .right-sidebar{
   grid-area: right;
+  font-family: 'Courier New', Courier;
+  padding: 1em;
 }
 footer{
   grid-area: footer;
+  align-self: center;
+  justify-self: center;
 }
