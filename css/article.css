@@ -1,0 +1,31 @@
+.article-list{
+  padding: 2em;
+  font-family: 'Courier New', Courier;
+  background-color: #fadd8c;
+}
+.article-list a:link {
+  text-decoration: none;
+}
+.article-list a:visited {
+  text-decoration: none;
+}
+.article-list a:hover {
+  
+  background-color: #fadd8c;
+  color: #009c3b;
+}
+.article-list a:active {
+  text-decoration: none;
+}
+.card h2{
+  color: #009c3b;
+}
+.card h4{
+  color: #ffdf00;
+}
+.card p{
+  color: #002776;
+}
+.card img{
+  height: 250px;
+}
