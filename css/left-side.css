@@ -1,6 +1,24 @@
-.left-sidebar ul{
+.left-sidebar ul {
   list-style-type: none;
 }
-.left-sidebar ul li{
+
+.left-sidebar ul li {
   margin: 0.5em;
+}
+
+.left-sidebar a:link {
+  text-decoration: none;
+  color: #002776;
+}
+
+.left-sidebar a:visited {
+  color: #ffdf00;  
+}
+
+.left-sidebar a:hover {
+  text-decoration: none;
+}
+
+.left-sidebar a:active {
+  text-decoration: none;
 }

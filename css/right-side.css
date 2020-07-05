@@ -1,6 +1,21 @@
-.right-sidebar ul{
-  list-style-type: none;
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.right-sidebar ul li{
+
+.facebook {
+  order: 1;
+}
+
+.instagram {
+  order: 2;
+}
+
+.twitter {
+  order: 3;
+}
+
+.share div {
   margin: 1em;
 }
