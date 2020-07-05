@@ -5,7 +5,9 @@
 .article-list a {
   color: #002776;
 }
-
+.article-list a {
+  color: #002776;
+}
 .article-list a:visited {
   color: #009c3b
 }
