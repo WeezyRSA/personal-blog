@@ -2,13 +2,12 @@
   padding: 2em;
   font-family: 'Courier New', Courier;
 }
-
-.article-list a:link {
-  color: #009c3b;
+.article-list a {
+  color: #002776;
 }
 
 .article-list a:visited {
-  color: #002776;
+  color: #009c3b
 }
 
 .article-list a:hover {
