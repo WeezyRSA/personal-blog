@@ -4,11 +4,11 @@
 }
 
 .article-list a:link {
-  text-decoration: none;
+  color: #009c3b;
 }
 
 .article-list a:visited {
-  color: #009c3b;
+  color: #002776;
 }
 
 .article-list a:hover {
