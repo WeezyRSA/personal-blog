@@ -16,33 +16,6 @@
   "right"
   "footer";
 }
-
-/*medium screens*/
-@media (min-width: 600px) and (max-width: 1100px) {
-  .container {
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    grid-template-rows: 150px auto 150px;
-    grid-template-areas: 
-    "logo nav nav"
-    "left article right"
-    "footer footer footer";
-  }
-}
-
-/*large screens*/
-@media (min-width: 1101px) {
-  .container {
-    display: grid;
-    grid-template-columns: 250px auto 250px;
-    grid-template-rows: 150px auto 150px;
-    grid-template-areas: 
-    "logo nav nav"
-    "left article right"
-    "footer footer footer";
-  }
-}
-
 .box {
   border: 1px solid red;
 }
@@ -110,4 +83,96 @@ footer {
   grid-area: footer;
   align-self: center;
   justify-self: center;
+}
+
+.contact-container {
+  width: 500px;
+  clear: both;
+}
+.contact-container input {
+  width: 100%;
+  clear: both;
+  line-height: 1.5em;
+}
+.contact-container label {
+  float: left;
+}
+.contact-container textarea {
+  width: 500px;
+  height: 150px;
+}
+gal-container {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: repeat(6,1f);
+  grid-template-areas: 
+  "img1"
+  "img2"
+  "img3"
+  "img4"
+  "img5"
+  "img6";
+}
+#img1 {
+  grid-area: img1;
+}
+#img2 {
+  grid-area: img2;
+}
+#img3 {
+  grid-area: img3;
+}
+#img4 {
+  grid-area: img4;
+}
+#img5 {
+  grid-area: img5;
+}
+#img6 {
+  grid-area: img6;
+}
+.gal-container img {
+  height: 80px;
+}
+/*medium screens*/
+@media (min-width: 600px) and (max-width: 1100px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 150px auto 150px;
+    grid-template-areas: 
+    "logo nav nav"
+    "left article right"
+    "footer footer footer";
+  }
+  gal-container {
+    display: grid;
+    grid-template-columns: repeat(2,80px);
+    grid-template-rows: repeat(3,1f);
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
+  }
+}
+
+/*large screens*/
+@media (min-width: 1101px) {
+  .container {
+    display: grid;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 150px auto 150px;
+    grid-template-areas: 
+    "logo nav nav"
+    "left article right"
+    "footer footer footer";
+  }
+  gal-container {
+    display: grid;
+    grid-template-columns: repeat(3,80px);
+    grid-template-rows: repeat(2,1f);
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+  }
 }
