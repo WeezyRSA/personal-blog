@@ -2,12 +2,15 @@
   padding: 2em;
   font-family: 'Courier New', Courier;
 }
+
 .article-list a {
   color: #002776;
 }
+
 .article-list a:link {
   color: #002776;
 }
+
 .article-list a:visited {
   color: #009c3b
 }
@@ -48,7 +51,7 @@
   color: #009c3b;
 }
 .post img {
-  height: 400px;
+  width: 80%;
 }
 .post h1 {
   color: #009c3b;

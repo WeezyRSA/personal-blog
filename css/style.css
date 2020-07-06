@@ -6,8 +6,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: 850px;
-  grid-template-rows: 150px 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1f 1fr 1fr;
   grid-template-areas: 
   "logo"
   "nav"
@@ -15,6 +15,7 @@
   "article"
   "right"
   "footer";
+  
 }
 /* .box {
   border: 1px solid red;
@@ -35,7 +36,7 @@
   justify-content: start;
   align-items: center;
   font-family: 'Courier New', Courier;
-  font-size: x-large;
+  font-size: small;
 }
 
 nav a {
@@ -67,6 +68,7 @@ nav a {
   grid-area: left;
   font-family: 'Courier New', Courier;
   padding: 1em;
+  height: auto;
 }
 
 article {
@@ -86,21 +88,24 @@ footer {
 }
 
 .contact-container {
-  width: 500px;
+  width: 320px;
   clear: both;
 }
+
 .contact-container input {
   width: 100%;
   clear: both;
   line-height: 1.5em;
 }
+
 .contact-container label {
   float: left;
 }
+
 .contact-container textarea {
-  width: 500px;
-  height: 150px;
+  width: 100%;
 }
+
 .gal-container {
   display: grid;
   grid-template-columns: 150px;
@@ -113,30 +118,39 @@ footer {
   "img5"
   "img6";
 }
+
 .img1 {
   grid-area: img1;
 }
+
 .img2 {
   grid-area: img2;
 }
+
 .img3 {
   grid-area: img3;
 }
+
 .img4 {
   grid-area: img4;
 }
+
 .img5 {
   grid-area: img5;
 }
+
 .img6 {
   grid-area: img6;
 }
+
 .gal-container img {
   height: 100px;
 }
+
 .thumb {
   margin  : 20px;
 }
+
 /*medium screens*/
 @media (min-width: 600px) and (max-width: 1100px) {
   .container {
@@ -148,6 +162,10 @@ footer {
     "left article right"
     "footer footer footer";
   }
+  .nav{
+    font-size: large;
+  } 
+
   .gal-container {
     display: grid;
     grid-template-columns: repeat(2,150px);
@@ -157,10 +175,23 @@ footer {
     "img3 img4"
     "img5 img6";
   }
+
+  .share {
+    flex-direction: column;
+  }
+  .contact-container textarea {
+    width: 500px;
+    height: 150px;
+  }
+
+  .post img {
+    width: 400px;
+  }
 }
 
 /*large screens*/
 @media (min-width: 1101px) {
+
   .container {
     display: grid;
     grid-template-columns: 250px auto 250px;
@@ -170,6 +201,11 @@ footer {
     "left article right"
     "footer footer footer";
   }
+
+  .nav{
+    font-size: x-large;
+  }  
+
   .gal-container {
     display: grid;
     grid-template-columns: repeat(3,150px);
@@ -177,5 +213,17 @@ footer {
     grid-template-areas: 
     "img1 img2 img3"
     "img4 img5 img6";
+  }
+
+  .share {
+    flex-direction: column;
+  }
+
+  .contact-container textarea {
+    width: 500px;
+    height: 150px;
+  }
+  .post img {
+    width: 400px;
   }
 }
